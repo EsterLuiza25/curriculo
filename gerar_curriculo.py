@@ -1,6 +1,5 @@
 
 from jinja2 import Environment, FileSystemLoader
-import os
 
 
 
@@ -138,9 +137,11 @@ def gerar_html():
     template = env.get_template('template.html')
 
     html_renderizado = template.render(dados=dados_curriculo)
-    with open('curriculo.html', 'w', encoding='utf-8') as f:
-        
-        f.write(html_renderizado)
+
+    for arquivo in ('index.html', 'curriculo.html'):
+        with open(arquivo, 'w', encoding='utf-8') as f:
+            f.write(html_renderizado)
+
     print("Currículo gerado com sucesso!")
 
 

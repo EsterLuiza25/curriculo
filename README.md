@@ -6,7 +6,8 @@ Projeto de curriculo responsivo desenvolvido com HTML e CSS, com geração do ar
 
 - `gerar_curriculo.py`: concentra os dados do curriculo e renderiza o HTML.
 - `template.html`: modelo usado pelo Jinja2.
-- `curriculo.html`: pagina final gerada para abrir no navegador ou publicar.
+- `index.html`: pagina final usada pelo GitHub Pages.
+- `curriculo.html`: copia alternativa da pagina final para abrir no navegador.
 - `style.css`: estilos visuais e regras de responsividade.
 
 ## Como executar
@@ -18,7 +19,7 @@ pip install -r requirements.txt
 python gerar_curriculo.py
 ```
 
-Depois, abra `curriculo.html` no navegador.
+Depois, abra `index.html` no navegador.
 
 ## Git
 
