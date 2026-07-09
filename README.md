@@ -1,6 +1,6 @@
 # Curriculo HTML
 
-Projeto de curriculo responsivo desenvolvido com HTML e CSS, publicado pelo GitHub Pages.
+Projeto de currículo responsivo desenvolvido com HTML e CSS, que gera dados a partir de uma biblioteca Python (jinja2) publicado pelo GitHub Pages.
 
 ## Arquivos principais
 
@@ -19,7 +19,7 @@ pip install -r requirements.txt
 python gerar_curriculo.py
 ```
 
-O script atualiza o `index.html`, que e a pagina publicada no GitHub Pages.
+O script atualiza o `index.html`, que e a página publicada no GitHub Pages.
 
 ## Como visualizar
 
@@ -27,4 +27,4 @@ Abra `index.html` no navegador ou acesse a pagina publicada pelo GitHub Pages.
 
 ## Git
 
-O projeto ja inclui `.gitignore` para manter fora do repositorio arquivos locais como `.venv/`, arquivos de ambiente e configuracoes de editor.
+O projeto ja inclui `.gitignore` para manter fora do repositório arquivos locais como `.venv/`, arquivos de ambiente e configurações de editor.
