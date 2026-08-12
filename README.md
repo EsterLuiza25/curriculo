@@ -28,11 +28,9 @@ Abra `index.html` no navegador ou acesse a pagina publicada pelo GitHub Pages.
 ## Git
 
 O projeto ja inclui `.gitignore` para manter fora do repositório arquivos locais como `.venv/`, arquivos de ambiente e configurações de editor.
-<<<<<<< HEAD
-=======
 
 ---
 ## Veja em ação
 
  **[Meu Curriculo Online](https://esterluiza25.github.io/curriculo/)**
->>>>>>> 808761ddf7841094dee5ea40df77fcd6223cd73b
+
