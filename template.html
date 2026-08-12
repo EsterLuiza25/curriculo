@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - {{ dados.nome }}</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="sidebar">
+            <div class="profile">
+                <h3>{{ dados.nome }}</h3>
+                <h2>{{ dados.cargo }}</h2>
+            </div>
+
+            <section class="contact">
+                <p>📍 {{ dados.contato.localizacao }}</p>
+                <p>📧 <a href="mailto:{{ dados.contato.email }}" target="_blank" rel="noopener noreferrer">E-mail</a></p>
+                <p>💼 <a href="{{ dados.contato.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+                <p>💻 <a href="{{ dados.contato.github }}" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+                <p>👩🏽‍💻 <a href="{{ dados.contato.portfolio }}" target="_blank" rel="noopener noreferrer">Portfolio</a></p>
+            </section>
+
+            <section class="skills">
+                <h3><i class="fa-solid fa-code"></i> Competências</h3>
+                <ul>
+                    {% for comp in dados.competencias %}
+                    <li>{{ comp }}</li>
+                    {% endfor %}
+                </ul>
+
+            </section>
+
+
+            <section class="languages">
+                <h3><i class="fa-solid fa-language"></i> Idiomas</h3>
+                <ul>
+                    {% for idioma, nivel in dados.idiomas.items() %}
+                    <li><strong>{{ idioma }}:</strong> {{ nivel }}</li>
+                    {% endfor %}
+                </ul>
+            </section>
+
+        </header>
+
+        <main class="main-content">
+            <section class="summary">
+                <h3><i class="fa-solid fa-user"></i> Objetivo</h3>
+                <p>{{ dados.perfil }}</p>
+            </section>
+
+            <section class="experience">
+                <h3><i class="fa-solid fa-briefcase"></i> Experiências</h3>
+                {% for exp in dados.experiencias %}
+                <div class="item">
+                    <div class="item-header">
+                        <h4>{{ exp.cargo }} — <span>{{ exp.empresa }}</span></h4>
+
+                        <span class="date">{{ exp.periodo }}</span>
+                    </div>
+                    <p>{{ exp.descricao }}</p>
+                </div>
+                {% endfor %}
+            </section>
+
+
+            <section class="voluntary">
+                <h3><i class="fa-solid fa-handshake"></i> Trabalho Voluntário</h3>
+                {% for vol in dados.voluntario %}
+                <div class="item">
+                    <h4>{{ vol.local }}</h4>
+                    <p>{{ vol.descricao }}</p>
+                </div>
+                {% endfor %}
+
+            </section>
+
+            <section class="education">
+                <h3><i class="fa-solid fa-graduation-cap"></i> Formação Acadêmica</h3>
+                {% for form in dados.formacao %}
+                <div class="item">
+                    <div class="item-header">
+                        <h4>{{ form.curso }}</h4>
+                        <span class="date">{{ form.periodo }}</span>
+                    </div>
+                    <p>{{ form.instituicao }}</p>
+                </div>
+                         {% endfor %}
+            </section>
+
+
+            <section class="projects">
+                <h3><i class="fa-solid fa-diagram-project"></i> Projetos Principais</h3>
+                {% for proj in dados.projetos %}
+                <div class="item">
+                    <div class="item-header">
+                        <h4>{{ proj.nome }}</h4>
+                    </div>
+                    <p>{{ proj.descricao }}</p>
+                    <small><strong>Tecnologias:</strong> {{ proj.tecnologias | join(', ') }}</small>
+                </div>
+                {% endfor %}
+            </section>
+
+
+            <section class="certificados">
+                <h3><i class="fa-solid fa-certificate"></i> Certificados</h3>
+                <ul>
+                    {% for cert in dados.certificados %}
+                    <li>
+                        <strong>{{ cert.nome }}</strong> — {{ cert.detalhes }}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
