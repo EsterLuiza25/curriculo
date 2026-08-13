@@ -27,7 +27,7 @@ Abra `index.html` no navegador ou acesse a pagina publicada pelo GitHub Pages.
 
 ## Git
 
-O projeto ja inclui `.gitignore` para manter fora do repositório arquivos locais como `.venv/`, arquivos de ambiente e configurações de editor.
+O projeto já inclui `.gitignore` para manter fora do repositório arquivos locais como `.venv/`, arquivos de ambiente e configurações de edição.
 
 ---
 ## Veja em ação
