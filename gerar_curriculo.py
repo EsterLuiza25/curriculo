@@ -50,13 +50,6 @@ dados_curriculo = {
 
         },
 
-        {
-            
-            "cargo": "Residente em IA",
-            "empresa": "Instituto de pesquisa Elborado & UnB",
-            "periodo": "-presente",
-            "descricao": "Desenvolvimento  "
-        }
 
     ],
 
