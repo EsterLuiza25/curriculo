@@ -29,7 +29,7 @@ dados_curriculo = {
             "cargo": "Estagiária de Tecnologia da Informação",
             "empresa": "AGU - Advocacia-Geral da União",
             "periodo": "- Presente",
-            "descricao": "Integração com a equipe de sistemas em desenvolvimento, atuando na sustentabilidade e evolução dos ecosistemas."
+            "descricao": "Integração com a equipe de sistemas em desenvolvimento, atuando na sustentabilidade e evolução dos ecossistemas."
 
         },
 
